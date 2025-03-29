@@ -21,4 +21,5 @@ require("lazy").setup({
   require("eien.plugins.lsp"),
   require("eien.plugins.telescope"),
   require("eien.plugins.tree"),
+  require("eien.plugins.lualine");
 })

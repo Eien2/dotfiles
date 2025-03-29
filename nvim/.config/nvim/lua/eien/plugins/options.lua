@@ -28,6 +28,7 @@ lackluster.setup({
     trouble = false,
     which_key = false,
     yanky = false,
+
   },
 })
 
