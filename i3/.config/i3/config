@@ -120,17 +120,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec_always feh --bg-fill /home/eien/downloads/minimalist-wallpaper-forest.png
+exec_always feh --bg-fill $HOME/downloads/minimalist-wallpaper-forest.png
 
 # Polybar
 exec_always killall polybar
-exec_always ~/.config/polybar/launch.sh 
+exec_always $HOME/.config/polybar/launch.sh 
 
 # Borders               border  backgr. text    indicator child_border
 client.focused          #DDD7D8 #DDD7D8 #333333 #DDD7D8   #DDD7D8
 client.focused_inactive #333333 #333333 #DDD7D8 #333333   #333333
 client.unfocused        #333333 #333333 #DDD7D8 #333333   #333333
-client.urgent           #A36B6B #A36B6B #DDD7D8 #A36B6B   #A36B6B
+client.urgent           #333333 #333333 #DDD7D8 #333333   #333333
 client.placeholder      #333333 #333333 #DDD7D8 #333333   #333333
 
 # Gaps
