@@ -86,6 +86,18 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+assign [class="kitty"] $ws1
+assign [class="firefox"] $ws2
+assign [class="spotify"] $ws3
+
+workspace $ws1 output DVI-D-1
+workspace $ws2 output HDMI-1
+workspace $ws3 output HDMI-1
+workspace $ws4 output DVI-D-1
+workspace $ws5 output DVI-D-1
+workspace $ws6 output HDMI-1
+workspace $ws7 output DVI-D-1
+
 # Reload
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
@@ -123,7 +135,12 @@ client.placeholder      #333333 #333333 #DDD7D8 #333333   #333333
 
 # Gaps
 gaps inner 10px
+gaps outer 10px
 smart_gaps inverse_outer 
 
 # Window Titles
 for_window [class="firefox"] title_format "Firefox"
+
+# Auto Exec
+exec --no-startup-id firefox 
+exec --no-startup-id kitty
