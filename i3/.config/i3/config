@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Font
-font pango:CaskaydiaCove Nerd Font 10
+font pango:CaskaydiaCove Nerd Font 12
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -23,7 +23,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # Executing and Killing
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
 
@@ -114,4 +114,16 @@ exec_always --no-startup-id feh --bg-fill /home/eien/downloads/minimalist-wallpa
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
 
-# Borders
+# Borders               border  backgr. text    indicator child_border
+client.focused          #DDD7D8 #DDD7D8 #333333 #DDD7D8   #DDD7D8
+client.focused_inactive #333333 #333333 #DDD7D8 #333333   #333333
+client.unfocused        #333333 #333333 #DDD7D8 #333333   #333333
+client.urgent           #A36B6B #A36B6B #DDD7D8 #A36B6B   #A36B6B
+client.placeholder      #333333 #333333 #DDD7D8 #333333   #333333
+
+# Gaps
+gaps inner 10px
+smart_gaps inverse_outer 
+
+# Window Titles
+for_window [class="firefox"] title_format "Firefox"

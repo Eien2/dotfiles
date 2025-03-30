@@ -19,7 +19,7 @@ require("lazy").setup({
   require("eien.plugins.comment"),
   require("eien.plugins.completion"),
   require("eien.plugins.lsp"),
-  require("eien.plugins.telescope"),
-  require("eien.plugins.oil"),
   require("eien.plugins.lualine"),
+  require("eien.plugins.oil"),
+  require("eien.plugins.telescope"),
 })
