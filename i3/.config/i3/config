@@ -88,7 +88,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="kitty"] $ws1
 assign [class="firefox"] $ws2
-assign [class="spotify"] $ws3
+assign [class="Spotify"] $ws3
 
 workspace $ws1 output DVI-D-1
 workspace $ws2 output HDMI-1
@@ -120,11 +120,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill /home/eien/downloads/minimalist-wallpaper-forest.png
+exec_always feh --bg-fill /home/eien/downloads/minimalist-wallpaper-forest.png
 
 # Polybar
-exec_always --no-startup-id killall polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh 
+exec_always killall polybar
+exec_always ~/.config/polybar/launch.sh 
 
 # Borders               border  backgr. text    indicator child_border
 client.focused          #DDD7D8 #DDD7D8 #333333 #DDD7D8   #DDD7D8
@@ -134,9 +134,8 @@ client.urgent           #A36B6B #A36B6B #DDD7D8 #A36B6B   #A36B6B
 client.placeholder      #333333 #333333 #DDD7D8 #333333   #333333
 
 # Gaps
-gaps inner 10px
+gaps inner 15px
 gaps outer 10px
-smart_gaps inverse_outer 
 
 # Window Titles
 for_window [class="firefox"] title_format "Firefox"
@@ -144,3 +143,5 @@ for_window [class="firefox"] title_format "Firefox"
 # Auto Exec
 exec --no-startup-id firefox 
 exec --no-startup-id kitty
+exec --no-startup-id spotify
+exec --no-startup-id picom -b
