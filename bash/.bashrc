@@ -9,13 +9,12 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# DISPLAY ENV VAR
-export DISPLAY=:0.0
-
-# DOT VAR
+# Variables
 export DOT=$HOME/temp-documents/dotfiles
+export DISPLAY=:0.0
+export EDITOR=neovim
 
-# ALIASES
+# Custom Aliases
 alias e="sudo shutdown now"
 alias stowit="stow -v -R -t ~"
 alias tma="tmux attach-session"
