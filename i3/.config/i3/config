@@ -56,7 +56,7 @@ bindsym $mod+a focus parent
 set $ws1 "Editor"
 set $ws2 "Browser"
 set $ws3 "Music"
-set $ws4 "Chilling"
+set $ws4 "Watching"
 set $ws5 "Games"
 set $ws6 "Recording"
 set $ws7 "General"
