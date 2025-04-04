@@ -1,0 +1,21 @@
+format="""
+$directory$git_branch$git_status
+$character
+"""
+
+add_newline = true
+
+[character]
+format = '[󱞪](#555555) '
+
+[git_branch]
+style = '#555555'
+format = '[$branch]($style) '
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = '#708090'
+
+[directory]
+style = '#AAAAAA'
+format = '[$path]($style) '
