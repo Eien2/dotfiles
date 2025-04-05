@@ -125,6 +125,7 @@ exec_always feh --bg-fill $HOME/downloads/minimalist-wallpaper-forest.png
 # Polybar
 exec_always killall polybar
 exec_always $HOME/.config/polybar/launch.sh 
+for_window [class="^polybar$"] border pixel 0
 
 # Borders               border  backgr. text    indicator child_border
 client.focused          #DDD7D8 #DDD7D8 #333333 #DDD7D8   #DDD7D8
@@ -139,6 +140,7 @@ gaps outer 10px
 
 # Window Titles
 for_window [class="firefox"] title_format "Firefox"
+for_window [class="kitty"] title_format "Terminal"
 
 # Auto Exec
 exec --no-startup-id firefox 
