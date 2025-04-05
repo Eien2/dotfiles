@@ -29,8 +29,9 @@ alias e="sudo shutdown now"
 alias stowit="stow -v -R -t ~"
 alias tma="tmux attach-session"
 alias snvim="sudo --preserve-env nvim"
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias screen="escrotum -s $h"
 
 # Starship
 eval "$(starship init zsh)"
