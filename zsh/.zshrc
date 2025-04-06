@@ -32,6 +32,7 @@ alias snvim="sudo --preserve-env nvim"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias screen="escrotum -s $h"
+alias icat="kitten icat"
 
 # Starship
 eval "$(starship init zsh)"
