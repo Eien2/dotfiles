@@ -1,0 +1,37 @@
+# Functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read dirname
+  mkdir $dirname
+}}
+
+# Options
+set shell sh
+set shellopts '-eu'
+set ifs "\n"
+set scrolloff 10
+set cursorpreviewfmt "\033[7;2m"
+set hidden true
+set ignorecase true
+set icons false
+set preview true
+#set previewer ~/.config/lf/preview.sh
+#set cleaner ~/.config/lf/cleaner.sh
+set drawbox false
+
+# Keybindings
+map d
+map e $nvim "$f"
+map y copy
+map x cut
+map p paste
+map ad mkdir
+map dd delete
+
+map gp cd ~/documents/projects
+map gd cd ~/documents
+map gD cd ~/downloads
+map gc cd ~/.config
+map gC cd ~/documents/courses
+map gi cd ~/images
+map gw cd ~/images/wallpapers
