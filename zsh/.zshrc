@@ -23,6 +23,7 @@ autoload -U compinit && compinit
 export DOT=$HOME/temp-documents/dotfiles
 export DISPLAY=:0.0
 export EDITOR=neovim
+export KITTY_ENABLE_MEDIA=1
 
 # Aliases
 alias e="sudo shutdown now"

@@ -15,15 +15,17 @@ set hidden true
 set ignorecase true
 set icons false
 set preview true
-#set previewer ~/.config/lf/preview.sh
-#set cleaner ~/.config/lf/cleaner.sh
 set drawbox false
 
-# Keybindings
+# Unkeybinds
 map d
+
+# Keybindings
 map e $nvim "$f"
 map y copy
 map x cut
+map v toggle
+map V glob-select *
 map p paste
 map ad mkdir
 map dd delete
