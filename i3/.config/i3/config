@@ -120,7 +120,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec_always feh --bg-fill $HOME/downloads/minimalist-wallpaper-forest.png
+exec_always feh --bg-fill $HOME/images/wallpapers/static/reality/full-moon.png
 
 # Polybar
 exec_always killall polybar
