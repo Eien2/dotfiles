@@ -136,7 +136,7 @@ client.placeholder      #333333 #333333 #DDD7D8 #333333   #333333
 
 # Gaps
 gaps inner 15px
-gaps outer 10px
+gaps outer 5px
 
 # Window Titles
 for_window [class="firefox"] title_format "Firefox"

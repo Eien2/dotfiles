@@ -1,0 +1,7 @@
+configuration {
+  modes: "window,run,ssh,drun";
+  font: "CaskaydiaCove Nerd Font 12";
+  drun-display-format: "{name}";
+}
+
+@theme "/home/eien/.config/rofi/lackluster.rasi"
