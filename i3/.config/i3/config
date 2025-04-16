@@ -9,7 +9,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Screen Settings
-exec_always xrandr --output DVI-D-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output None-1-1 --off
+exec_always xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output None-1-1 --off
 
 # Volumes
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -90,13 +90,13 @@ assign [class="kitty"] $ws1
 assign [class="firefox"] $ws2
 assign [class="Spotify"] $ws3
 
-workspace $ws1 output DVI-D-1
-workspace $ws2 output HDMI-1
-workspace $ws3 output HDMI-1
-workspace $ws4 output DVI-D-1
-workspace $ws5 output DVI-D-1
-workspace $ws6 output HDMI-1
-workspace $ws7 output DVI-D-1
+workspace $ws1 output DVI-D-0
+workspace $ws2 output HDMI-0
+workspace $ws3 output HDMI-0
+workspace $ws4 output DVI-D-0
+workspace $ws5 output DVI-D-0
+workspace $ws6 output HDMI-0
+workspace $ws7 output DVI-D-0
 
 # Reload
 bindsym $mod+Shift+c reload
