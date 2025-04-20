@@ -27,13 +27,16 @@ export KITTY_ENABLE_MEDIA=1
 
 # Aliases
 alias e="sudo shutdown now"
+alias rb="sudo reboot"
 alias stowit="stow -v -R -t ~"
 alias tma="tmux attach-session"
-alias snvim="sudo --preserve-env nvim"
+alias weather="curl wttr.in"
+alias vim="nvim"
+alias svim="sudo --preserve-env nvim"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias screen="escrotum -s $h"
-alias icat="kitten icat"
+alias image="kitten icat"
 
 # Starship
 eval "$(starship init zsh)"

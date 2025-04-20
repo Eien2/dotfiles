@@ -33,5 +33,3 @@ lackluster.setup({
 })
 
 vim.cmd("colorscheme lackluster-hack")
-
-require("bufferline").setup {}

@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   require("eien.plugins.auto-session"),
-  require("eien.plugins.bufferline"),
   require("eien.plugins.colorscheme"),
   require("eien.plugins.comment"),
   require("eien.plugins.completion"),
