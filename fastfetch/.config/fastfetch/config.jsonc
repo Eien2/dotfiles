@@ -21,5 +21,24 @@
     "disk",
     "break",
     "colors"
-  ]
+  ],
+  "display": {
+    "color": {
+      "keys": "white",
+      "title": "white"
+    }
+  },
+  "logo": {
+    "source": "/home/eien/images/pfp/discord/just-listen-to-the-song.png",
+    "width": 47,
+    "height": 18,
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "right": 2
+    }
+  },
+  "image": {
+    "backend": "chafa"
+  }
 }

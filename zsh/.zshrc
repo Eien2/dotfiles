@@ -26,6 +26,9 @@ export EDITOR=neovim
 export KITTY_ENABLE_MEDIA=1
 
 # Aliases
+alias update="yay -Syu"
+alias pi="yay -S"
+alias pr="yay -R"
 alias e="sudo shutdown now"
 alias rb="sudo reboot"
 alias stowit="stow -v -R -t ~"
@@ -35,7 +38,7 @@ alias vim="nvim"
 alias svim="sudo --preserve-env nvim"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
-alias screen="escrotum -s $h"
+alias scr="escrotum -s $h"
 alias image="kitten icat"
 
 # Starship
