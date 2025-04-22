@@ -29,9 +29,9 @@
     }
   },
   "logo": {
-    "source": "/home/eien/images/pfp/discord/just-listen-to-the-song.png",
+    "source": "/home/eien/documents/dotfiles/fastfetch/.config/fastfetch/just-listen-to-the-song-neofetch.png",
     "width": 40,
-    "height": 18,
+    "height": 19,
     "padding": {
       "top": 0,
       "left": 0,

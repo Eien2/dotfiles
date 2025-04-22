@@ -1,5 +1,5 @@
 configuration {
-  modes: "window,run,ssh,drun";
+  modes: "window,run,ssh,drun,combi";
   font: "CaskaydiaCove Nerd Font 12";
   drun-display-format: "{name}";
 }
