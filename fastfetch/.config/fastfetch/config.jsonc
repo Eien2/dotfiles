@@ -24,13 +24,13 @@
   ],
   "display": {
     "color": {
-      "keys": "white",
-      "title": "white"
+      "keys": "blue",
+      "title": "blue"
     }
   },
   "logo": {
     "source": "/home/eien/images/pfp/discord/just-listen-to-the-song.png",
-    "width": 47,
+    "width": 40,
     "height": 18,
     "padding": {
       "top": 0,
