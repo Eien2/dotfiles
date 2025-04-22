@@ -20,15 +20,16 @@ zinit light zsh-users/zsh-autosuggestions
 autoload -U compinit && compinit
 
 # Variables
-export DOT=$HOME/temp-documents/dotfiles
+export DOT=$HOME/documents/dotfiles
 export DISPLAY=:0.0
 export EDITOR=neovim
 export KITTY_ENABLE_MEDIA=1
 
 # Aliases
-alias update="yay -Syu"
+alias pu="yay -Syu"
 alias pi="yay -S"
 alias pr="yay -R"
+alias lis="live-server"
 alias e="sudo shutdown now"
 alias rb="sudo reboot"
 alias stowit="stow -v -R -t ~"

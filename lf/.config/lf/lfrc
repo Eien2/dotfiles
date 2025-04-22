@@ -32,8 +32,11 @@ map dd delete
 
 map gp cd ~/documents/projects
 map gd cd ~/documents
-map gD cd ~/downloads
+map gD cd ~/documents/dotfiles
 map gc cd ~/.config
 map gC cd ~/documents/courses
 map gi cd ~/images
 map gw cd ~/images/wallpapers
+map gn cd ~/documents/notes
+map gx cd /opt/lampp/htdocs
+map gv cd ~/videos
