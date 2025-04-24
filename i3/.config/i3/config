@@ -51,16 +51,16 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Workspaces
-set $ws1 "Editor"
-set $ws2 "Browser"
+set $ws1 "Terminal"
+set $ws2 "Web"
 set $ws3 "Music"
-set $ws4 "Watching"
-set $ws5 "Games"
-set $ws6 "Recording"
-set $ws7 "General"
-set $ws8 "noname-1"
-set $ws9 "noname-2"
-set $ws10 "noname-3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -84,17 +84,9 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-assign [class="kitty"] $ws1
-assign [class="firefox"] $ws2
-assign [class="Spotify"] $ws3
-
 workspace $ws1 output DVI-D-0
 workspace $ws2 output HDMI-0
 workspace $ws3 output HDMI-0
-workspace $ws4 output DVI-D-0
-workspace $ws5 output DVI-D-0
-workspace $ws6 output HDMI-0
-workspace $ws7 output DVI-D-0
 
 # Reload
 bindsym $mod+Shift+c reload
@@ -141,7 +133,6 @@ for_window [class="firefox"] title_format "Firefox"
 for_window [class="kitty"] title_format "Terminal"
 
 # Auto Exec
-exec --no-startup-id firefox 
 exec --no-startup-id kitty
-exec --no-startup-id spotify
+exec --no-startup-id firefox
 exec --no-startup-id picom -b
