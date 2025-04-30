@@ -20,10 +20,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 tiling_drag modifier titlebar
 
-# Executing and Killing
+# Keybinds
 bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
+bindsym $mod+f exec --no-startup-id "firefox"
+bindsym $mod+x exec --no-startup-id "kitty -e lf"
+bindsym $mod+p exec --no-startup-id "spotify"
 
 # Focus
 bindsym $mod+h focus left
@@ -40,7 +43,7 @@ bindsym $mod+Shift+l move right
 # Layouts
 bindsym $mod+semicolon split h
 bindsym $mod+v split v
-bindsym $mod+f fullscreen toggle
+bindsym $mod+g fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
@@ -88,6 +91,10 @@ workspace $ws1 output DVI-D-0
 workspace $ws2 output HDMI-0
 workspace $ws3 output HDMI-0
 
+assign [class="^kitty"] $ws1
+assign [class="^firefox"] $ws2
+assign [class="^Spotify"] $ws3
+
 # Reload
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
@@ -110,7 +117,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec_always feh --bg-fill $HOME/images/wallpapers/static/anime-manga/just-listen-to-the-song/just-listen-to-the-song-wp.png
+exec_always feh --bg-fill $HOME/images/wallpapers/static/own-made/eien-japanese-char.png
 
 # Polybar
 exec_always killall polybar
@@ -129,8 +136,8 @@ gaps inner 15px
 gaps outer 5px
 
 # Window Titles
-for_window [class="firefox"] title_format "Firefox"
-for_window [class="kitty"] title_format "Terminal"
+for_window [class="firefox"] title_format "firefox"
+for_window [class="kitty"] title_format "kitty"
 
 # Auto Exec
 exec --no-startup-id kitty
