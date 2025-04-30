@@ -34,6 +34,8 @@ stow -v -R -t ~ name-of-directory-to-stow (Program to stow)
 
 ## Additional Info
 
+- [Stow Wiki](https://man.archlinux.org/man/stow.8)
+- [Git Doc](https://git-scm.com/docs)
 - ***You Can't Stow LightDM***
 - ***Bash Is Not Currently Maintained***
 
