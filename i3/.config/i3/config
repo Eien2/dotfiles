@@ -125,15 +125,15 @@ exec_always $HOME/.config/polybar/launch.sh
 for_window [class="^polybar$"] border pixel 0
 
 # Borders               border  backgr. text    indicator child_border
-client.focused          #DDD7D8 #DDD7D8 #333333 #DDD7D8   #DDD7D8
-client.focused_inactive #333333 #333333 #DDD7D8 #333333   #333333
-client.unfocused        #333333 #333333 #DDD7D8 #333333   #333333
-client.urgent           #333333 #333333 #DDD7D8 #333333   #333333
-client.placeholder      #333333 #333333 #DDD7D8 #333333   #333333
+client.focused          #CCCCCC #CCCCCC #333333 #CCCCCC   #CCCCCC
+client.focused_inactive #333333 #333333 #CCCCCC #333333   #333333
+client.unfocused        #333333 #333333 #CCCCCC #333333   #333333
+client.urgent           #333333 #333333 #CCCCCC #333333   #333333
+client.placeholder      #333333 #333333 #CCCCCC #333333   #333333
 
 # Gaps
-gaps inner 15px
-gaps outer 5px
+gaps inner 0px
+gaps outer 0px
 
 # Window Titles
 for_window [class="firefox"] title_format "firefox"
