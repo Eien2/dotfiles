@@ -21,18 +21,19 @@ autoload -U compinit && compinit
 
 # Variables
 export DOT=$HOME/documents/dotfiles
+export PATH=$PATH:/home/eien/.local/bin
 export DISPLAY=:0.0
 export EDITOR=neovim
 export KITTY_ENABLE_MEDIA=1
 
 # Aliases
-alias pu="yay -Syu"
-alias pi="yay -S"
-alias pr="yay -R"
+alias yu="yay -Syu"
+alias yi="yay -S"
+alias yr="yay -R"
 alias lis="live-server"
 alias e="sudo shutdown now"
 alias rb="sudo reboot"
-alias stowit="stow -v -R -t ~"
+alias stowit="stow -v -R -t"
 alias tma="tmux attach-session"
 alias weather="curl wttr.in"
 alias vim="nvim"
