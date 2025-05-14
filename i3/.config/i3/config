@@ -132,7 +132,7 @@ client.urgent           #333333 #333333 #CCCCCC #333333   #333333
 client.placeholder      #333333 #333333 #CCCCCC #333333   #333333
 
 # Gaps
-gaps inner 0px
+gaps inner 15px
 gaps outer 0px
 
 # Window Titles
