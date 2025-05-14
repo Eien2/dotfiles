@@ -1,0 +1,10 @@
+[
+  {
+    "name": "nvim-conf",
+    "path": "/home/eien/documents/dotfiles/nvim/.config/nvim"
+  },
+  {
+    "name": "i3-conf",
+    "path": "/home/eien/documents/dotfiles/i3/.config/i3"
+  }
+]

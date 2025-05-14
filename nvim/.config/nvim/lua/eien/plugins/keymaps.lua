@@ -17,3 +17,7 @@ vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
 vim.keymap.set("n", "<leader>cn", ":ConvertFindNext<cr>")
 vim.keymap.set("n", "<leader>cc", ":ConvertFindCurrent<cr>")
 vim.keymap.set("n", "<leader>ca", ":ConvertAll<cr>")
+
+-- cd-project
+vim.keymap.set("n", "<leader>cd", ":CdProject<cr>")
+vim.keymap.set("n", "<leader>cm", ":CdProjectManualAdd<cr>")
