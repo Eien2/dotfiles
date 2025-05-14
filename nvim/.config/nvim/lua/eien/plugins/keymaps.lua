@@ -12,3 +12,8 @@ vim.keymap.set({ "n", "v" }, "<leader>/", ":CommentToggle<cr>")
 
 -- lsp
 vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
+
+-- convert
+vim.keymap.set("n", "<leader>cn", ":ConvertFindNext<cr>")
+vim.keymap.set("n", "<leader>cc", ":ConvertFindCurrent<cr>")
+vim.keymap.set("n", "<leader>ca", ":ConvertAll<cr>")

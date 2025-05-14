@@ -22,5 +22,6 @@ require("lazy").setup({
   require("eien.plugins.oil"),
   require("eien.plugins.telescope"),
   require("eien.plugins.auto-pairs"),
-  require("eien.plugins.treesitter")
+  require("eien.plugins.treesitter"),
+  require("eien.plugins.misc")
 })

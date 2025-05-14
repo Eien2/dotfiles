@@ -48,7 +48,7 @@ eval "$(starship init zsh)"
 
 # Keybindings
 bindkey -v
-bindkey '^f' autosuggest-accept
+bindkey '^y' autosuggest-accept
 bindkey '^n' history-search-forward
 bindkey '^p' history-search-backward
 
