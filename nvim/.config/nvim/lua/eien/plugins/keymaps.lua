@@ -21,3 +21,6 @@ vim.keymap.set("n", "<leader>ca", ":ConvertAll<cr>")
 -- cd-project
 vim.keymap.set("n", "<leader>cd", ":CdProject<cr>")
 vim.keymap.set("n", "<leader>cm", ":CdProjectManualAdd<cr>")
+
+-- pomo
+vim.keymap.set("n", "<leader>sp", ":TimerSession pomodoro<cr>")
