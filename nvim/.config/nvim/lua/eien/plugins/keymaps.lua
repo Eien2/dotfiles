@@ -24,3 +24,6 @@ vim.keymap.set("n", "<leader>cm", ":CdProjectManualAdd<cr>")
 
 -- pomo
 vim.keymap.set("n", "<leader>sp", ":TimerSession pomodoro")
+
+-- url-open
+vim.keymap.set("n", "<leader>o", ":<esc>:URLOpenUnderCursor<cr>")
