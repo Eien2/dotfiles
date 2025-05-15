@@ -25,5 +25,8 @@ require("lazy").setup({
   require("eien.plugins.treesitter"),
   require("eien.plugins.mason"),
   require("eien.plugins.pomo"),
+  require("eien.plugins.folding"),
+  require("eien.plugins.languages"),
+  require("eien.plugins.markdown"),
   require("eien.plugins.misc")
 })

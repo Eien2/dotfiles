@@ -27,3 +27,6 @@ vim.keymap.set("n", "<leader>sp", ":TimerSession pomodoro")
 
 -- url-open
 vim.keymap.set("n", "<leader>o", ":<esc>:URLOpenUnderCursor<cr>")
+
+-- timespent
+vim.keymap.set("n", "<leader>ts", ":ShowTimeSpent<cr>")

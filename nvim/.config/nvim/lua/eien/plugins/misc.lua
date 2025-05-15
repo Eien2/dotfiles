@@ -45,4 +45,20 @@ return {
       url_open.setup({})
     end,
   },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Local Keymaps (which-key)",
+      },
+    },
+  },
+  {
+    "quentingruber/timespent.nvim",
+  },
 }
