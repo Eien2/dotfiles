@@ -34,3 +34,6 @@ vim.keymap.set("n", "<leader>ts", ":ShowTimeSpent<cr>")
 
 -- text-case
 vim.keymap.set("n", "ga.", ":TextCaseOpenTelescope<cr>")
+
+-- markdowns
+vim.keymap.set("n", "<leader>,", function() require("md-pdf").convert_md_to_pdf() end)
