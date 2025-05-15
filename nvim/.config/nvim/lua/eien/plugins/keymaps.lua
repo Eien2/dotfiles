@@ -30,3 +30,6 @@ vim.keymap.set("n", "<leader>o", ":<esc>:URLOpenUnderCursor<cr>")
 
 -- timespent
 vim.keymap.set("n", "<leader>ts", ":ShowTimeSpent<cr>")
+
+-- text-case
+vim.keymap.set("n", "ga.", ":TextCaseOpenTelescope<cr>")
