@@ -21,6 +21,7 @@
   "oil.nvim": { "branch": "master", "commit": "685cdb4ffa74473d75a1b97451f8654ceeab0f4a" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "pomo.nvim": { "branch": "main", "commit": "7e06e5221d8d1e596a0ab29dd4d7fcee5f3cd05a" },
+  "telescope-undo.nvim": { "branch": "main", "commit": "928d0c2dc9606e01e2cc547196f48d2eaecf58e5" },
   "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
   "text-case.nvim": { "branch": "main", "commit": "e898cfd46fa6cde0e83abb624a16e67d2ffc6457" },
   "timespent.nvim": { "branch": "master", "commit": "3eda13f7468de06a8b948d0eddf82f15b5d88dca" },
