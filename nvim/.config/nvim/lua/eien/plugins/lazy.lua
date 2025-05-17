@@ -28,5 +28,6 @@ require("lazy").setup({
   require("eien.plugins.folding"),
   require("eien.plugins.languages"),
   require("eien.plugins.markdown"),
+  require("eien.plugins.trouble"),
   require("eien.plugins.misc")
 })
