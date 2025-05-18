@@ -25,6 +25,7 @@ export PATH=$PATH:/home/eien/.local/bin
 export DISPLAY=:0.0
 export EDITOR=neovim
 export KITTY_ENABLE_MEDIA=1
+. "/home/eien/.deno/env"
 
 # Aliases
 alias yu="yay -Syu"
@@ -36,8 +37,7 @@ alias rb="sudo reboot"
 alias stowit="stow -v -R -t"
 alias tma="tmux attach-session"
 alias weather="curl wttr.in"
-alias vim="nvim"
-alias svim="sudo --preserve-env nvim"
+alias snvim="sudo --preserve-env nvim"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias scr="escrotum -s $h"

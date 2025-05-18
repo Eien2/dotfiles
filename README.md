@@ -29,7 +29,7 @@ pacman -S stow
 
 ### After installed stow cd into dotfiles directory and run
 ```bash
-stow -v -R -t ~ name-of-directory-to-stow (Program to stow)
+stow -v -R -t ~ name-of-directory-to-stow
 ```
 
 ## Additional Info
