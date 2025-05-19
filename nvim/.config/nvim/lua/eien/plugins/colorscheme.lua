@@ -1,6 +1,4 @@
 return {
-  {
-    "slugbyte/lackluster.nvim",
-    priority = 1000
-  }
+  "slugbyte/lackluster.nvim",
+  priority = 1000
 }
