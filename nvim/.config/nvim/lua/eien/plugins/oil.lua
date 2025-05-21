@@ -17,5 +17,8 @@ return {
         ["q"] = "actions.close",
       },
     })
+
+    vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>")
+    vim.keymap.set("n", "<leader>E", "<cmd>Oil .<cr>")
   end,
 }

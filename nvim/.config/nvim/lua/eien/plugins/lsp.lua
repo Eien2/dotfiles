@@ -12,17 +12,15 @@ return {
       }
     }
   },
-  config = function()
-    vim.lsp.enable({
-      "html",
-      "cssls",
-      "ts_ls",
-      "lua_ls",
-      "marksman",
-      "phpactor",
-      "pyright",
-      "bashls",
-      "jsonls"
-    })
-  end,
+  vim.lsp.enable({
+    "html",
+    "cssls",
+    "ts_ls",
+    "lua_ls",
+    "marksman",
+    "phpactor",
+    "pyright",
+    "bashls",
+    "jsonls"
+  }),
 }

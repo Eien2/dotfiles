@@ -119,7 +119,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec_always feh --bg-fill $HOME/images/wallpapers/static/own-made/eien-japanese-char.png
+exec_always feh --bg-fill $HOME/images/wallpapers/static/pixel/half-moon-castle-night.png
 
 # Polybar
 exec_always killall polybar

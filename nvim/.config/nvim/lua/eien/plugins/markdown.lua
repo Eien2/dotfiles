@@ -15,6 +15,8 @@ return {
         output_path = "/home/eien/documents/pdf",
         pdf_engine = "pdflatex",
       })
+
+      vim.keymap.set("n", "<leader>,", function() require("md-pdf").convert_md_to_pdf() end)
     end
   },
   {

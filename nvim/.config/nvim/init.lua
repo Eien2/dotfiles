@@ -1,2 +1,2 @@
 require("eien.core")
-require("eien.plugins")
+require("eien.lazy")
