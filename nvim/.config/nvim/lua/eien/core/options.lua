@@ -1,22 +1,33 @@
--- indents
-vim.opt.smartindent = true
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-
--- numbers
+vim.o.guicursor = ""
 vim.nu = true
-vim.opt.relativenumber = true
+vim.o.relativenumber = true
 
--- wrapping
-vim.opt.wrap = false
+vim.o.smartindent = true
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.autoindent = true
+vim.o.smartindent = true
+vim.o.wrap = false
+vim.o.linebreak = true
 
--- search
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+vim.o.swapfile = false
+vim.o.backup = false
+vim.o.undofile = true
 
--- colors
-vim.opt.termguicolors = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.hlsearch = false
+vim.o.incsearch = true
+
+vim.o.termguicolors = true
+vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
+vim.o.background = "dark"
+vim.o.signcolumn = "yes"
+
+vim.opt.clipboard:append("unnamedplus")
+
+vim.o.mouse = "a"
+vim.g.editorconfig = true

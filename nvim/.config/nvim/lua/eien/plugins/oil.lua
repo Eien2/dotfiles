@@ -15,6 +15,7 @@ return {
         ["<C-c>"] = false,
         ["<M-h>"] = "actions.select_split",
         ["q"] = "actions.close",
+        ["<C-q>"] = "actions.close",
       },
     })
 
