@@ -3,11 +3,27 @@ return {
   tag = "0.1.6",
   dependencies = {
     "nvim-lua/plenary.nvim",
+    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    "nvim-tree/nvim-web-devicons",
     "debugloop/telescope-undo.nvim",
   },
   config = function()
-    require("telescope").setup({})
-    require("telescope").load_extension("undo")
+    local telescope = require("telescope")
+    local actions = require("telescope.actions")
+    local builtin = require("telescope.builtin")
+
+    telescope.load_extension("undo")
+    telescope.setup({
+      defaults = {
+        path_display = { "smart" },
+        mappings = {
+          i = {
+            ["<C-k>"] = actions.move_selection_previous,
+            ["<C-j>"] = actions.move_selection_next,
+          },
+        }
+      }
+    })
 
     vim.keymap.set("n", "<leader>fs", "<cmd>Telescope find_files<cr>")
     vim.keymap.set("n", "<leader>fg", "<cmd>Telescope git_status<cr>")
