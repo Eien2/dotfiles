@@ -51,6 +51,7 @@ bindkey -v
 bindkey '^y' autosuggest-accept
 bindkey '^n' history-search-forward
 bindkey '^p' history-search-backward
+bindkey '^[' clear-screen
 
 # History
 HISTSIZE=10000
