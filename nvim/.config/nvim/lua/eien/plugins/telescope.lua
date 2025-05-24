@@ -13,6 +13,7 @@ return {
     local builtin = require("telescope.builtin")
 
     telescope.load_extension("undo")
+    telescope.load_extension("harpoon")
 
     telescope.setup({
       defaults = {
@@ -31,5 +32,6 @@ return {
     vim.keymap.set("n", "<leader>fl", "<cmd>Telescope live_grep<cr>")
     vim.keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>")
     vim.keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>")
+    vim.keymap.set("n", "<leader>fh", "<cmd>Telescope harpoon marks<cr>")
   end,
 }

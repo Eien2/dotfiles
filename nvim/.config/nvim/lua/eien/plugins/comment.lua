@@ -1,8 +1,8 @@
 return {
-  "terrortylor/nvim-comment",
-  config = function()
-    require("nvim_comment").setup({ create_mappings = false })
-
-    vim.keymap.set({ "n", "v" }, "<leader>/", "<cmd>CommentToggle<cr>")
-  end
+  "numToStr/Comment.nvim",
+  opts = {
+    opleader = {
+      line = "<leader>/",
+    },
+  }
 }
