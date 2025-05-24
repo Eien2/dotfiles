@@ -21,7 +21,7 @@ return {
     vim.keymap.set("n", "<leader>3", function() require("harpoon.ui").nav_file(3) end)
     vim.keymap.set("n", "<leader>4", function() require("harpoon.ui").nav_file(4) end)
 
-    vim.keymap.set("n", "<leader>mn", function() require("harpoon.ui").nav_next() end)
-    vim.keymap.set("n", "<leader>mp", function() require("harpoon.ui").nav_prev() end)
+    vim.keymap.set("n", "<leader>n", function() require("harpoon.ui").nav_next() end)
+    vim.keymap.set("n", "<leader>p", function() require("harpoon.ui").nav_prev() end)
   end,
 }

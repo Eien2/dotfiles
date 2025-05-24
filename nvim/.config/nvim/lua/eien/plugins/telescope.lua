@@ -13,6 +13,7 @@ return {
     local builtin = require("telescope.builtin")
 
     telescope.load_extension("undo")
+    telescope.load_extension("fzf")
     telescope.load_extension("harpoon")
 
     telescope.setup({
@@ -24,6 +25,15 @@ return {
             ["<C-j>"] = actions.move_selection_next,
           },
         },
+        file_ignore_patterns = {
+          "node_modules",
+          "^.git/"
+        },
+      },
+      pickers = {
+        find_files = {
+          hidden = true,
+        },
       },
     })
 
@@ -32,6 +42,6 @@ return {
     vim.keymap.set("n", "<leader>fl", "<cmd>Telescope live_grep<cr>")
     vim.keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>")
     vim.keymap.set("n", "<leader>fu", "<cmd>Telescope undo<cr>")
-    vim.keymap.set("n", "<leader>fh", "<cmd>Telescope harpoon marks<cr>")
+    vim.keymap.set("n", "<leader>fe", "<cmd>Telescope harpoon marks<cr>")
   end,
 }
