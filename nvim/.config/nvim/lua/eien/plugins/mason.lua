@@ -25,6 +25,7 @@ return {
         "emmet_language_server",
         "eslint",
         "marksman",
+        "intelephense",
       },
       automatic_installation = true,
     })

@@ -15,7 +15,6 @@ return {
       preset = 'default',
       ["<C-k>"] = { "select_prev", "fallback" },
       ["<C-j>"] = { "select_next", "fallback" },
-      ["<cr>"] = { "accept", "fallback" },
     },
 
     appearance = {
@@ -27,6 +26,27 @@ return {
 
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
+      providers = {
+        lsp = {
+          name = "lsp",
+          enabled = true,
+          module = "blink.cmp.sources.lsp",
+          kind = "LSP",
+          score_offset = 950
+        },
+        snippets = {
+          name = "snippets",
+          enabled = true,
+          module = "blink.cmp.sources.snippets",
+          score_offset = 1000
+        },
+        luasnip =  {
+          name = "luasnip",
+          enabled = true,
+          module = "blink.cmp.sources.luasnip",
+          score_offset = 1000
+        },
+      },
     },
 
     fuzzy = { implementation = "prefer_rust_with_warning" }

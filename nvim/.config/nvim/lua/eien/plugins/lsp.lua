@@ -28,14 +28,14 @@ return {
         "ts_ls",
         "lua_ls",
         "marksman",
-        "phpactor",
+        "intelphense",
         "pyright",
         "bashls",
         "jsonls"
       })
 
       vim.lsp.config("*", {
-        capabilities = capabilities
+        capabilities = capabilities,
       })
 
       vim.diagnostic.config({
