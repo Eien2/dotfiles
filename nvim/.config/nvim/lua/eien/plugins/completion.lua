@@ -32,19 +32,19 @@ return {
           enabled = true,
           module = "blink.cmp.sources.lsp",
           kind = "LSP",
-          score_offset = 950
+          score_offset = 990,
         },
         snippets = {
           name = "snippets",
           enabled = true,
           module = "blink.cmp.sources.snippets",
-          score_offset = 1000
+          score_offset = 1000,
         },
-        luasnip =  {
+        luasnip = {
           name = "luasnip",
           enabled = true,
           module = "blink.cmp.sources.luasnip",
-          score_offset = 1000
+          score_offset = 1000,
         },
       },
     },

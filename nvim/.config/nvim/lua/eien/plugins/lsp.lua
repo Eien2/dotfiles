@@ -38,6 +38,10 @@ return {
         capabilities = capabilities,
       })
 
+      vim.lsp.config("html", {
+        filetypes = { "html", "templ", "php" },
+      })
+
       vim.diagnostic.config({
         signs = {
           text = signs
