@@ -18,6 +18,7 @@ return {
         "lua_ls",
         "ts_ls",
         "html",
+        "bashls",
         "cssls",
         "tailwindcss",
         "gopls",
@@ -33,10 +34,15 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier",
+        "prettierd",
+        "pretty-php",
         "stylua",
         "isort",
+        "black",
         "pylint",
+        "clang-format",
         "clangd",
+        "beautysh",
         "denols",
         { "eslint_d", version = "13.1.2"},
       },

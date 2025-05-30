@@ -42,6 +42,10 @@ return {
         filetypes = { "html", "templ", "php" },
       })
 
+      vim.lsp.config("bashls", {
+        filetypes = { "bash", "sh", "zsh" },
+      })
+
       vim.diagnostic.config({
         signs = {
           text = signs
