@@ -22,7 +22,7 @@ vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
 vim.keymap.set("n", "<leader>f", function()
-	require("conform").format()
+	require("conform").format({ async = true })
 end)
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
