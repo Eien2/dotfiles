@@ -6,15 +6,15 @@ return {
 			options = {
 				theme = "lackluster",
 			},
-			tabline = {
+			tabline = {},
+			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
-				lualine_c = { "filename" },
+				lualine_c = { "lsp_status" },
 				lualine_x = { "encoding", "fileformat", "filetype" },
-				lualine_y = { "lsp_status" },
+				lualine_y = {},
 				lualine_z = { "location" },
 			},
-			sections = {},
 		})
 	end,
 }

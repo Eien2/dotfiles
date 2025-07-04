@@ -30,3 +30,6 @@ vim.opt.clipboard:append("unnamedplus")
 
 vim.o.mouse = "a"
 vim.g.editorconfig = true
+
+vim.o.showtabline = 2
+vim.o.tabline = "%#TabLineFill#%t"
