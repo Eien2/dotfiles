@@ -143,6 +143,6 @@ for_window [class="kitty"] title_format "kitty"
 default_border pixel 0
 
 # Auto Exec
+exec --no-startup-id "sh -c 'sleep 5; exec firefox'"
 exec --no-startup-id kitty
-exec --no-startup-id firefox
 exec --no-startup-id picom -b
